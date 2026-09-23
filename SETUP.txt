@@ -1,0 +1,18 @@
+MTM STARS — SUPABASE READY STORE
+
+1) Run SUPABASE-SETUP.sql in Supabase SQL Editor. This includes the original tables plus product_media and about_media.
+2) Create your private admin user in Supabase Authentication > Users.
+3) Put the Supabase Project URL and anon/public key in supabase-config.js.
+4) Open admin.html and login.
+5) In Store Contact, enter the WhatsApp number in international digits, e.g. 923001234567. Every CONTACT US / WhatsApp button will use it.
+6) Categories are managed from Admin: name, description, image and sort order.
+7) Products are managed from Admin: category, image, description, featured status, plus multiple photos/videos.
+8) About Us supports its main image plus multiple extra images/videos.
+9) Customer flow:
+   - Hero CONTACT US opens WhatsApp.
+   - Category cards open a dedicated premium category page.
+   - Category page lists that category's products from Supabase.
+   - Product cards open a dedicated premium product page.
+   - Product page shows name, price, description, main image, extra photos/videos and CONTACT US to WhatsApp.
+
+IMPORTANT: Never put a Supabase service_role key in the website. Only the public anon key belongs in supabase-config.js.
